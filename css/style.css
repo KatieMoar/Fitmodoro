@@ -1,0 +1,416 @@
+@import url('https://fonts.googleapis.com/css2?family=News+Cycle&family=Raleway:wght@100;300&display=swap');
+
+
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+:root {
+     --font : 'News Cycle', sans-serif;
+
+}
+
+html {
+     font-size: 62.5%;
+     overflow: hidden;
+}
+
+.flex {
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: flex
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+body {
+     background: #fff;
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: flex;
+     -webkit-box-orient: vertical;
+     -webkit-box-direction: normal;
+         -ms-flex-direction: column;
+             flex-direction: column;
+     -webkit-box-pack: center;
+         -ms-flex-pack: center;
+             justify-content: center;
+     -webkit-box-align: center;
+         -ms-flex-align: center;
+             align-items: center;
+     color: rgb(55, 17, 70);
+     font-family: var(--font);
+     overflow-x: hidden;
+     scroll-behavior: smooth;
+
+}
+
+.fitModoro {
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: flex;
+     -webkit-box-align: center;
+         -ms-flex-align: center;
+             align-items: center;
+}
+
+img {
+     width: 130px;
+     position: absolute;
+     top: 30px;
+
+}
+
+.timer,
+.workout {
+     display: block;
+     border-radius: 30px;
+     background-color: rgb(186, 173, 191);
+     margin: 100px 10px 0 10px;
+     width: 30vw;
+     height: 70vh;
+     min-width: 400px;
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: flex;
+     -webkit-box-orient: vertical;
+     -webkit-box-direction: normal;
+         -ms-flex-direction: column;
+             flex-direction: column;
+     -webkit-box-pack: space-evenly;
+         -ms-flex-pack: space-evenly;
+             justify-content: space-evenly;
+
+}
+
+
+.timerCenter {
+     margin-top: 20px;
+}
+
+.center {
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: flex;
+     -webkit-box-orient: horizontal;
+     -webkit-box-direction: normal;
+         -ms-flex-direction: row;
+             flex-direction: row;
+     -webkit-box-pack: center;
+         -ms-flex-pack: center;
+             justify-content: center;
+}
+
+.picturePlusTime {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+}
+
+.timerPart {
+     font-size: 14rem;
+     font-weight: bold;
+     letter-spacing: .5rem;
+     text-shadow: 2px 2px white;
+
+}
+
+.spaceOut {
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: flex;
+     -webkit-box-pack: space-evenly;
+         -ms-flex-pack: space-evenly;
+             justify-content: space-evenly;
+     width: 50%;
+}
+
+
+
+.timerBtn {
+     width: 70px;
+     height: 70px;
+     position: relative;
+     border-radius: 50%;
+     border: none;
+     color: rgb(55, 17, 70);
+     background-color: rgb(153, 140, 235);
+     cursor: pointer;
+}
+
+.timerBtnStart {
+     background-color: rgb(165, 227, 141);
+}
+
+.timerBtnStop {
+     background-color: rgb(245, 83, 83);
+}
+
+h2 {
+     font-size: 6rem;
+     letter-spacing: 1rem;
+     text-align: center;
+     margin: 15px 0;
+     text-transform: uppercase;
+     font-weight: 100;
+
+
+
+}
+
+.workout h2 {
+     font-size: 3rem;
+}
+
+.setMinutesButton {
+     background-color: rgb(33, 168, 240);
+     color: #fff;
+     width: 100px;
+     height: 100px;
+     border: 0;
+     font-family: var(--font);
+     cursor: pointer;
+     border-radius: 30%;
+     -webkit-box-shadow: 3px 3px rgb(55, 17, 70);
+             box-shadow: 3px 3px rgb(55, 17, 70);
+}
+
+.setMinutesButton span {
+     font-size: 3rem;
+     line-height: 20px;
+}
+
+.spaceAroundButtons {
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: flex;
+     -webkit-box-pack: space-evenly;
+         -ms-flex-pack: space-evenly;
+             justify-content: space-evenly;
+     width: 100%;
+}
+
+.center > div .setMinutesButton {
+     margin-bottom: 100px;
+}
+
+.workout {
+     text-align: center;
+     -webkit-box-align: center;
+         -ms-flex-align: center;
+             align-items: center;
+}
+
+
+.hidden {
+     display: none;
+}
+
+h5 {
+     font-size: 3rem;
+     margin: 15px 0;
+     color: #fff;
+     letter-spacing: .1rem;
+
+}
+
+
+.woStart {
+     background-color: rgb(33, 168, 240);
+     margin-bottom: 30px;
+     font-size: 2rem;
+     color: #fff;
+     width: 80%;
+     height: 130px;
+     -webkit-box-shadow: 5px 5px rgb(55, 17, 70);
+             box-shadow: 5px 5px rgb(55, 17, 70);
+     border-radius: 30px;
+     text-transform: uppercase;
+     padding: 15px 15px;
+}
+
+.woStart span:first-child {
+     font-size: 30px;
+     text-align: center;
+}
+
+h3 {
+     font-size: 2rem;
+     margin: 0 0 0 25px;
+}
+
+footer div {
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: flex;
+     -webkit-box-pack: space-evenly;
+         -ms-flex-pack: space-evenly;
+             justify-content: space-evenly;
+     -ms-flex-line-pack: center;
+         align-content: center;
+     margin-top: 5px;
+     margin-left: 15px;
+}
+
+footer div i {
+     font-size: 3rem;
+     margin: 0;
+}
+
+.photoCredit {
+     color: #000;
+     margin-top: 15px;
+     margin-left: 20px;
+}
+
+.photoCredit a {
+     text-decoration: none;
+     cursor: default;
+}
+
+.photoCredit a:visited {
+     color: #000;
+
+}
+
+
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+
+
+/******************************************
+/* MEDIA QUERIES   
+/*******************************************/
+@media only screen and (max-width: 400px) {
+
+
+     
+
+     body {
+          width: 100%;
+          background-color: rgb(186, 173, 191);
+          margin: 0;
+     }
+     .fitModoro {
+          width: 100%;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: center;
+              -ms-flex-pack: center;
+                  justify-content: center;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center;        
+   }
+
+
+     .timer {
+          width: 100%;
+          margin: 0;
+          overflow-x: hidden;
+     }
+
+
+     .workout {
+          border-radius: 0;
+          margin-top: 15px;
+   }
+
+     h2 {
+          font-size: 3rem;
+     }
+
+     footer {
+          margin-bottom: 50px;
+     }
+
+     .setMinutesButton {
+          width: 80px;
+          height: 80px;
+     }
+
+     .setMinutesButton span {
+          font-size: 2rem;
+          line-height: 20px;
+     }
+
+     .woStart {
+          background-color: rgb(33, 168, 240);
+          margin-bottom: 30px;
+          color: #fff;
+          width: 70%;
+          height: 130px;
+          -webkit-box-shadow: 5px 5px rgb(55, 17, 70);
+                  box-shadow: 5px 5px rgb(55, 17, 70);
+          border-radius: 30px;
+          text-transform: uppercase;
+          padding: 15px 15px;
+     }
+
+     .woStart span:first-child {
+          font-size: 3rem;
+          text-align: center;
+     }
+
+     img {
+          width: 100px;
+          position: relative;
+          display: inline-block;
+     }
+
+     
+
+
+
+}
+
+@media only screen and (max-width: 900px) {
+
+     body {
+          height: 100vh;
+     }
+     .fitModoro {
+          display: inline-block;
+          margin-top: 80px;
+          
+   }
+
+   .timerPart {
+     font-size: 10rem;
+   }
+
+     .workout {
+          margin-top: 15px;
+   }
+
+}

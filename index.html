@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+	<script src="https://kit.fontawesome.com/07837de4a8.js" crossorigin="anonymous"></script>
+	
+	<title>fitModoro</title>
+</head>
+<body>	
+	<img src="images/astro_dumbell.png">
+<div class="fitModoro">
+	<div class="timer">
+		<div class="center timerCenter">
+			<span class="timerPart timerPartMinutes">00</span>
+			<span class="timerPart">:</span>
+			<span class="timerPart timerPartSeconds">00</span>
+		</div>
+		<div class="center">
+			<div class="spaceOut">
+		<button type="button" class="timerBtn timerBtnControl timerBtnStart"><span class="material-icons">play_arrow</span></button>
+		<button type="button" class="timerBtn timerBtnControl timerBtnReset"><span class="material-symbols-outlined">restart_alt</span></button>
+			</div>
+		</div>
+		<h2 id="setTimerHeader">Set Timer</h2>
+		<div class="center">
+			<div class="spaceAroundButtons">
+				<button class="setMinutesButton add15 timerButtonToggle"><span>15 Min</span></button>
+				<button class="setMinutesButton add25 timerButtonToggle"><span>25 Min</span></button>
+				<button class="setMinutesButton add35 timerButtonToggle"><span>35 Min</span></button>
+			</div>
+		</div>
+	</div>
+	<div id= "workoutScroll" class="workout">
+			<h2 class="workoutTitleOne">Brain Workout Time!</h2>
+			<h2 class="workoutTitleTwo hidden">Body Workout Time!</h2>
+			<h5 class="workoutInput workoutOne hidden"></h5>
+			<h5 class="workoutInput workoutTwo hidden"></h5>
+			<h5 class="workoutInput workoutThree hidden"></h5>
+			<button class="setMinutesButton woStart hidden"><span>Start your 5 Minute Workout!</button>
+			
+	</div>
+</div>
+
+<footer>
+	<h3><i class="fa-solid fa-copyright"></i> Moar Coding</h3> 
+	<div>
+		<a href="https://github.com/KatieMoar" target="_blank"><i class="fa-brands fa-github"></i></a>
+		<a href="https://www.linkedin.com/in/katie-moar-49bb68235/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+		<a href="https://twitter.com/Coding_Antisoc" target="_blank"><i class="fa-brands fa-twitter-square"></i></a>
+	</div>
+	<div class="photoCredit">
+		<span>Photo Credit: <a href="https://www.freepik.com/author/catalyststuff" target="_blank">Catalyststuff</a> at <a href="https://www.freepik.com/" target="_blank">freepik</a>
+	</div>
+</footer>
+	
+
+
+
+	<script type="module" src="js/main.js"></script>
+</body>
+</html>
